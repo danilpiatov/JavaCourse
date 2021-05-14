@@ -3,9 +3,7 @@ package service1;
 import service3.Port;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.io.FileReader;
 
@@ -56,7 +54,7 @@ public class Generator {
     }
 
     public static Integer generateAmount() {
-        return 100 + (int) (Math.random() * 4901);
+        return 10000 + (int) (Math.random() * 4901);
     }
 
 }

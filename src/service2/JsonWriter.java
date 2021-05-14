@@ -6,10 +6,8 @@ import service1.Generator;
 import service1.Record;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
 import java.util.Locale;
 
 public class JsonWriter {
@@ -18,7 +16,7 @@ public class JsonWriter {
 
         Locale.setDefault(Locale.ENGLISH);
         JSONArray service1JSON = new JSONArray();
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 150; i++) {
             Record record = Generator.generateRecord();
             JSONObject recordJSON = new JSONObject();
             SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd yyyy HH:mm");
